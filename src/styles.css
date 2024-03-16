@@ -1,0 +1,321 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#app {
+  background-image: url(https://prostudio.ru/wp-content/themes/prostudio/images/components/tools/all-good-bg-no-minify.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  align-items: center;
+  background-position: center center;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+}
+
+.main {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-top: 30px;
+  text-align: center;
+  width: 100%;
+  height: 450px;
+  /* background-color: coral; */
+}
+
+@media screen and (min-width: 770px) {
+  .main {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .main {
+    margin-top: 90px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .main {
+    margin-top: 70px;
+  }
+}
+
+/* --------------------------------- */
+.heading {
+  color: #ffff;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.text {
+  color: #ffff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* response text */
+@media screen and (min-width: 770px) {
+  .text {
+    margin-top: 21px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .text {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .text {
+    margin-top: 30px;
+  }
+}
+
+/* ---------------------------------------------- */
+
+.wrapper-btn {
+  margin-top: 70px;
+  /* background-color: red; */
+}
+
+#btn {
+  padding: 18px 35px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 45px;
+  background-color: #0081cc;
+  color: #ffff;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: rgba(2, 157, 246, 0.7);
+  transition: 0.2s;
+}
+
+/* response btn  */
+@media screen and (min-width: 770px) {
+  #btn {
+    padding: 18px 35px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  #btn {
+    padding: 22px 55px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #btn {
+    padding: 25px 60px;
+  }
+}
+
+/* ---------------------------------------------- */
+
+.wrapper-progress-bar {
+  visibility: hidden;
+  margin-top: 20px;
+  padding-top: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+.bar-text-up {
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 23px;
+  color: #ffff;
+}
+
+/* response bar-text-up  */
+@media screen and (min-width: 770px) {
+  .bar-text-up {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .bar-text-up {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .bar-text-up {
+    font-size: 25px;
+  }
+}
+
+/* ---------------------------------------------- */
+
+.wrapper-bar {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(247, 242, 242, 0.1);
+  margin-bottom: 7px;
+  border-radius: 7px;
+}
+
+.bar {
+  position: absolute;
+  height: 100%;
+  border-radius: 7px;
+  background-color: white;
+}
+
+#play-animation {
+  animation-delay: 5s;
+  animation: progress-animation 7s forwards;
+  transition: transform 500ms easeInOutCubic(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.wrapper-text-bar {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 11px;
+}
+
+#text-bar-down {
+  margin-right: 2px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffff;
+}
+
+#percent {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffff;
+}
+
+/* response text-bar-down, percent  */
+@media screen and (min-width: 770px) {
+
+  #text-bar-down,
+  #percent {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+
+  #text-bar-down,
+  #percent {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  #text-bar-down,
+  #percent {
+    font-size: 37px;
+  }
+}
+
+/* ---------------------------------------------- */
+
+/* блок с результатом */
+.wrapper-change-main {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  background-color: rgba(3, 82, 128, 0.7);
+  width: 100%;
+  height: 100vh;
+  /* background-color: green; */
+}
+
+.change-text {
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  color: #ffff;
+  /* background-color: red; */
+}
+
+.heading-change-main {
+  color: #ffff;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.text-change-main {
+  color: #ffff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* response text-change-main */
+/* @media screen and (min-width: 770px) {
+  .text-change-main {
+    margin-top: 21px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .text-change-main {
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .text-change-main {
+    margin-top: 30px;
+  }
+} */
+/* ---------------------------------------------- */
+
+#btn-change-main {
+  margin-top: 50px;
+  padding: 12px 37px;
+  color: white;
+  background-color: inherit;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffff;
+  font-weight: bold;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#btn-change-main:hover {
+  background-color: #ffff;
+  color: #0081cc;
+}
