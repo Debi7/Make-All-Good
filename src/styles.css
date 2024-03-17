@@ -22,29 +22,26 @@ body {
 
 .main {
   margin: 0 auto;
-  margin-top: 30px;
-  padding-top: 30px;
+  /* margin-top: 30px; */
+  /* padding-top: 30px; */
+  margin-top: 70px;
   text-align: center;
   width: 100%;
-  height: 450px;
-  /* background-color: coral; */
-}
-
-@media screen and (min-width: 770px) {
-  .main {
-    margin-top: 120px;
-  }
+  height: 300px;
+  background-color: coral;
 }
 
 @media screen and (min-width: 990px) {
   .main {
     margin-top: 90px;
+    height: 350px;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .main {
-    margin-top: 70px;
+    margin-top: 120px;
+    height: 450px;
   }
 }
 
@@ -61,15 +58,11 @@ body {
   line-height: 30px;
   font-size: 18px;
   font-weight: 500;
+
+  margin-top: 21px;
 }
 
-/* response text */
-@media screen and (min-width: 770px) {
-  .text {
-    margin-top: 21px;
-  }
-}
-
+/* text */
 @media screen and (min-width: 990px) {
   .text {
     margin-top: 25px;
@@ -85,9 +78,23 @@ body {
 /* ---------------------------------------------- */
 
 .wrapper-btn {
-  margin-top: 70px;
-  /* background-color: red; */
+  margin-top: 50px;
+  background-color: red;
 }
+
+@media screen and (min-width: 990px) {
+  .wrapper-btn {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper-btn {
+    margin-top: 70px;
+  }
+}
+
+
 
 #btn {
   padding: 18px 35px;
@@ -105,13 +112,7 @@ body {
   transition: 0.2s;
 }
 
-/* response btn  */
-@media screen and (min-width: 770px) {
-  #btn {
-    padding: 18px 35px;
-  }
-}
-
+/*  btn  */
 @media screen and (min-width: 990px) {
   #btn {
     padding: 22px 55px;
@@ -128,10 +129,12 @@ body {
 
 .wrapper-progress-bar {
   visibility: hidden;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding-top: 10px;
   width: 100%;
   height: 200px;
+
+  background-color: red;
 }
 
 .bar-text-up {
@@ -142,13 +145,7 @@ body {
   color: #ffff;
 }
 
-/* response bar-text-up  */
-@media screen and (min-width: 770px) {
-  .bar-text-up {
-    font-size: 23px;
-  }
-}
-
+/* bar-text-up  */
 @media screen and (min-width: 990px) {
   .bar-text-up {
     font-size: 24px;
@@ -165,12 +162,13 @@ body {
 
 .wrapper-bar {
   position: relative;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   width: 100%;
   height: 3px;
   background-color: rgba(247, 242, 242, 0.1);
   margin-bottom: 7px;
   border-radius: 7px;
+  background-color: red;
 }
 
 .bar {
@@ -218,15 +216,7 @@ body {
   color: #ffff;
 }
 
-/* response text-bar-down, percent  */
-@media screen and (min-width: 770px) {
-
-  #text-bar-down,
-  #percent {
-    font-size: 30px;
-  }
-}
-
+/* text-bar-down, percent  */
 @media screen and (min-width: 990px) {
 
   #text-bar-down,
@@ -246,7 +236,7 @@ body {
 /* ---------------------------------------------- */
 
 /* блок с результатом */
-.wrapper-change-main {
+/* .wrapper-change-main {
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -255,7 +245,7 @@ body {
   background-color: rgba(3, 82, 128, 0.7);
   width: 100%;
   height: 100vh;
-  /* background-color: green; */
+  /* background-color: green; *
 }
 
 .change-text {
@@ -265,7 +255,7 @@ body {
   width: 100%;
   height: 100vh;
   color: #ffff;
-  /* background-color: red; */
+  /* background-color: red; *
 }
 
 .heading-change-main {
@@ -281,27 +271,25 @@ body {
   line-height: 30px;
   font-size: 18px;
   font-weight: 500;
-}
+  margin-top: 21px;
+} */
 
-/* response text-change-main */
-/* @media screen and (min-width: 770px) {
-  .text-change-main {
-    margin-top: 21px;
-  }
-}
-@media screen and (min-width: 990px) {
+/* text-change-main */
+/* @media screen and (min-width: 990px) {
   .text-change-main {
     margin-top: 25px;
   }
 }
+
 @media screen and (min-width: 1400px) {
   .text-change-main {
     margin-top: 30px;
   }
 } */
+
 /* ---------------------------------------------- */
 
-#btn-change-main {
+/* #btn-change-main {
   margin-top: 50px;
   padding: 12px 37px;
   color: white;
@@ -318,4 +306,4 @@ body {
 #btn-change-main:hover {
   background-color: #ffff;
   color: #0081cc;
-}
+} */
