@@ -1,5 +1,5 @@
 {
-  "name": "make-all-good",
+  "name": "make-all-good_js-vite",
   "homepage": "https://debi7.github.io/Make-All-Good/",
   "private": true,
   "version": "0.0.0",
@@ -7,17 +7,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "dependencies": {
-    "node-modules": "^1.0.1"
-  },
   "devDependencies": {
     "eslint": "^8.44.0",
     "gh-pages": "^6.1.1",
-    "vite": "^4.4.0"
+    "vite": "^5.1.6"
   }
 }
