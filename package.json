@@ -15,5 +15,11 @@
     "eslint": "^8.44.0",
     "gh-pages": "^6.1.1",
     "vite": "^5.1.6"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.esm.js",
+      "require": "./index.cjs.js"
+    }
   }
 }
