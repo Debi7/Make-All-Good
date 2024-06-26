@@ -16,7 +16,7 @@ const textBar = document.getElementById('text-bar-down');
 
 function getProgressBar() {
   progressBar.style.visibility = 'visible';
-  // main.style.visibility = 'hidden';
+  main.style.visibility = 'hidden';
 
   let changePercent;
   let valueTextBar = textBar.innerHTML;
@@ -42,7 +42,7 @@ function getProgressBar() {
     textBar.innerHTML = '0';
     bar.removeAttribute('id', 'play-animation');
     changeMain.style.visibility = 'visible';
-    // progressBar.style.visibility = 'hidden';
+    progressBar.style.visibility = 'hidden';
   }, 10000);
 }
 
